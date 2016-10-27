@@ -1,25 +1,50 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> Selenum Test Cases </title>
-<script type="text/javascript">
+    <title>Javascript: How to set textbox value</title>
 
-function doSomethingWithTextBox()
-{
-  var textBox = document.getElementById('meter');
-  dddddd
+    <script type="text/javascript" language="JavaScript">
+        function convertM2F() {
+			var meterStr = document.getElementById('txtMeter1').value;
+			var meterFloat  = parseFloat(meterStr);
+			var ftFloat = meterFloat*3.28084;
+            document.getElementById('txtFt').value = ftFloat;
+        }
 
-}
+		function convertM2Mile() {
+			var meterStr = document.getElementById('txtMeter2').value;
+			var meterFloat  = parseFloat(meterStr);
+			var ftFloat = meterFloat*0.000621371;
+            document.getElementById('txtMile').value = ftFloat;
+        }
 
-</script>
+		function convertM2Yard() {
+			var meterStr = document.getElementById('txtMeter3').value;
+			var meterFloat  = parseFloat(meterStr);
+			var ftFloat = meterFloat*1.09361;
+            document.getElementById('txtYard').value = "Surprise!!!";
+        }
+    </script>
+
 </head>
-
 <body>
-
-<form >
-
-meter: <input type="text" id="meter"> ft: <input type="text" name="ft"> 
-<input type="submit" value="convert" onclick="myFunction()">
-</form>
-
+    <h1>Unit Converter</h1>
+    </br>
+	Meter2Foot: 
+    <input id="txtMeter1" type="text" />
+    <input id="txtFt" type="text" />
+	<button type="button" onclick="Javascript:convertM2F()">
+        Convert</button>
+	</br></br>
+	Meter2Mile: 
+    <input id="txtMeter2" type="text" />
+    <input id="txtMile" type="text" />
+	<button type="button" onclick="Javascript:convertM2Mile()">
+        Convert</button>
+	</br></br>
+	Meter2Yard: 
+    <input id="txtMeter3" type="text" />
+    <input id="txtYard" type="text" />
+	<button type="button" onclick="Javascript:convertM2Yard()">
+        Convert</button>
 </body>
 </html>
