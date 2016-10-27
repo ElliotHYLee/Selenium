@@ -27,7 +27,7 @@
     function convertMin2Sec() {
 			var meterStr = document.getElementById('txtMinute').value;
 			var meterFloat  = parseFloat(meterStr);
-			var ftFloat = meterFloat*60;
+			var ftFloat = meterFloat*60 + 0.8888
             document.getElementById('txtSec').value = ftFloat;
         }
     </script>
