@@ -1,0 +1,43 @@
+Selenium :
+Automates browsers
+Primarily for testing purposes
+	can also automate administration tasks
+
+testing framework for web applications
+
+Two options:
+	webdriver:
+		-create robust browser based regression automation suites and test
+		- scale and distribute scripts across many environments
+	IDE
+		- quick bug reproduction scripts 
+		- create scripts to aid in automation aided exploratory testing
+
+
+
+
+provides record/playback tool to allow you to write scripts without writing a script however it also provies a way to write tests in many popular languages
+
+Selenium IDE
+	-Integrated development environment for selenium tests
+	-it is a firefox add on 
+	-allows recording,editing, and debugging tests
+	-recorded tests are written in selenese 
+
+Selenese: special scripting language for selenium, provides commands for performing actions in a browser and retrieving data from the resulting page
+
+Test can also be written in various languages by making calls to the selenium client api
+
+selenium WebDriver:
+	- sucessor to selenium rc
+	- accepts commands and sends them to a browser
+	- implemented through a browser-specific driver 
+	- does not need a special server to execute tests
+	- actually starts a browser and controls it 
+
+Selenium Grid :
+	- a server that allows tests to use web browser instances running on remote machines
+	- one server acts as the hub to obtain access to browser instances
+
+History:
+Their competitor was named mercury, you can cure Mercury with Selenium supplements and thus they got their name
