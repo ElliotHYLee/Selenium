@@ -14,8 +14,6 @@ Two options:
 		- create scripts to aid in automation aided exploratory testing
 
 
-
-
 provides record/playback tool to allow you to write scripts without writing a script however it also provies a way to write tests in many popular languages
 
 Selenium IDE

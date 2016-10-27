@@ -3,7 +3,7 @@
     <title>Javascript: How to set textbox value</title>
 
     <script type="text/javascript" language="JavaScript">
-        function convertM2F() {
+    function convertM2F() {
 			var meterStr = document.getElementById('txtMeter1').value;
 			var meterFloat  = parseFloat(meterStr);
 			var ftFloat = meterFloat*3.28084;
@@ -23,12 +23,19 @@
 			var ftFloat = meterFloat*1.09361;
             document.getElementById('txtYard').value = "Surprise!!!";
         }
+
+    function convertMin2Sec() {
+			var meterStr = document.getElementById('txtMinute').value;
+			var meterFloat  = parseFloat(meterStr);
+			var ftFloat = meterFloat*60;
+            document.getElementById('txtSec').value = ftFloat;
+        }
     </script>
 
 </head>
 <body>
     <h1>Unit Converter</h1>
-    </br>
+  </br></br>
 	Meter2Foot:
     <input id="txtMeter1" type="text" />
     <input id="txtFt" type="text" />
@@ -46,5 +53,16 @@
     <input id="txtYard" type="text" />
 	<button type="button" onclick="Javascript:convertM2Yard()">
         Convert</button>
+
+  </br></br>
+	Minute2Sec:
+    <input id="txtMinute" type="text" />
+    <input id="txtSec" type="text" />
+	<button type="button" onclick="Javascript:convertMin2Sec()">
+        Convert</button>
+
+
+
+
 </body>
 </html>
