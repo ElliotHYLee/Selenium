@@ -1,5 +1,8 @@
 /*style sheet group by tags and classes
 */
+img{
+  text-align:center;
+}
 body, html {
     background-image: url("concrete_seamless.png");
     height: 100%;
