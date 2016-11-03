@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<!-- introduction page -->
+<head>
+	<title>Selenium - Introduction</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:700%7CDroid:400,700italic" rel="stylesheet" type="text/css" />
+</head>
+<!-- Header -->
+<body>
+<div class="container">
+	<header>
+		<a href="../index.html" id="title"><h1>Intro to Selenium</h1></a>
+		<h6>Brought to you by Selenium tech group of CSE 5914</h6>
+
+		<hr/>
+	</header>
+
+	<div id="content">
+		<h2>Selenium Scripting</h2>
+<!-- your code here -->
+		<p>Selenium test in available in high-level languages such as Java, Ruby, Python and C#.</p><br />
+		<p>Writing test scripts in a high level language is easy. I recommend you learn the concepts behind Selenium PageObjects first. PageObjects is an object oriented library for building easily maintainable tests. It separates test code into a Model, View, Controller pattern. </p><br />
+		
+		<p>A very simple Selenium test looks like this in Java:</p><br />
+		<br />
+		<span style="font-family: Courier New,Courier,monospace;">package
+		com.example.tests;</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<br style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">import
+		com.thoughtworks.selenium.*;</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">import
+		java.util.regex.Pattern;</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<br style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">public class
+		temp script extends SeleneseTestCase {</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		public void setUp() throws Exception {</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; setUp("http://localhost:8080/", "*iexplore");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		}</span><br style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		public void testTemp script() throws Exception {</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.open("/BrewBizWeb/");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.click("link=Start The BrewBiz Example");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.waitForPageToLoad("30000");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.type("name=id", "bert");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.type("name=Password", "biz");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.click("name=dologin");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp; selenium.waitForPageToLoad("30000");</span><br
+		style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+		}</span><br style="font-family: Courier New,Courier,monospace;">
+		<span style="font-family: Courier New,Courier,monospace;">}</span><br />
+		<br />
+		<p>The super constructor setUp tells the Selenium client library to connect to the Selenium RC service to use Microsoft Internet Explorer (*iexplore) and the base URL of http://localhost:8080/. All subsequent Selenium commands will be relative to the base URL. For example, selenium.open("/BrewBizWeb/") commands Selenium RC to tell IE to open http://localhost:8080/BrewBizWeb/.</p>
+		
+
+
+
+
+	</div>
+</div>
+<!-- footer -->
+		<div id="nav">
+		<div class="circle" id="right"><a href="lesson1.html" class="navbutton">&#8674;</a></div>
+		</div>
+
+		<br><br><br><br>
+		<p>&copy; 2016 2016 Selenium - Summer Xue, Elliot Lee, Bowen Dai, Abby Benedict </p></div>
+</body>
+</html>
